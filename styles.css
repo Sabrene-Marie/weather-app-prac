@@ -10,11 +10,29 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248) 0%,
+    rgb(168, 222, 248) 21.8%,
+    rgb(189, 250, 205) 35.6%,
+    rgb(243, 250, 189) 52.9%,
+    rgb(250, 227, 189) 66.8%,
+    rgb(248, 172, 172) 90%,
+    rgb(254, 211, 252) 99.7%
+  );
 }
 ::selection {
   color: #fff;
-  background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248) 0%,
+    rgb(168, 222, 248) 21.8%,
+    rgb(189, 250, 205) 35.6%,
+    rgb(243, 250, 189) 52.9%,
+    rgb(250, 227, 189) 66.8%,
+    rgb(248, 172, 172) 90%,
+    rgb(254, 211, 252) 99.7%
+  );
 }
 .wrapper {
   width: 400px;
@@ -32,7 +50,6 @@ body {
   border-bottom: 1px solid #ccc;
 }
 header i {
-
   font-size: 0em;
   cursor: pointer;
   margin-right: 8px;
@@ -56,12 +73,14 @@ header i {
   margin-bottom: 15px;
 }
 .input-part .info-txt.error {
+  text-align: center;
   color: #721c24;
   display: block;
   background: #f8d7da;
   border: 1px solid #f5c6cb;
 }
 .input-part .info-txt.pending {
+  text-align: center;
   color: #0c5460;
   display: block;
   background: #d1ecf1;
@@ -69,6 +88,7 @@ header i {
   text-align: center;
 }
 .input-part :where(input, button) {
+  text-align: center;
   width: 100%;
   height: 55px;
   border: none;
@@ -85,7 +105,7 @@ header i {
   border: 2px solid #43affc;
 }
 .input-part input::placeholder {
-  color: #bfbfbf;
+  color: plum;
 }
 .input-part .separator {
   height: 1px;
@@ -107,10 +127,28 @@ header i {
 .input-part button {
   color: BLACK;
   cursor: pointer;
-background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);  transition: 0.3s ease;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248) 0%,
+    rgb(168, 222, 248) 21.8%,
+    rgb(189, 250, 205) 35.6%,
+    rgb(243, 250, 189) 52.9%,
+    rgb(250, 227, 189) 66.8%,
+    rgb(248, 172, 172) 90%,
+    rgb(254, 211, 252) 99.7%
+  );
+  transition: 0.3s ease;
 }
 .input-part button:hover {
-background: linear-gradient(90deg, rgb(2, 250, 70) -1.7%, rgb(2, 238, 250) 21.1%, rgb(174, 8, 237) 46%, rgb(237, 8, 117) 64.2%, rgb(237, 8, 117) 81%, rgb(248, 136, 0) 97.2%);
+  background: linear-gradient(
+    90deg,
+    rgb(2, 250, 70) -1.7%,
+    rgb(2, 238, 250) 21.1%,
+    rgb(174, 8, 237) 46%,
+    rgb(237, 8, 117) 64.2%,
+    rgb(237, 8, 117) 81%,
+    rgb(248, 136, 0) 97.2%
+  );
 }
 
 .wrapper .weather-part {
@@ -196,4 +234,9 @@ background: linear-gradient(90deg, rgb(2, 250, 70) -1.7%, rgb(2, 238, 250) 21.1%
 }
 .humidity i {
   font-size: 37px;
+}
+.footer {
+  text-align: center;
+  padding-top: 19px;
+  font-size: 15px;
 }
